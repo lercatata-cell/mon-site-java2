@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: mon-site-java
+    env: java
+    buildCommand: javac Main.java
+    startCommand: java Main
