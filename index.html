@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cyber Lab</title>
+</head>
+<body>
+
+<h1>Cyber Lab - Apprentissage sécurité web</h1>
+
+<form>
+  <input type="text" name="user" placeholder="Entre ton nom">
+  <button type="submit">Envoyer</button>
+</form>
+
+<p>Résultat :</p>
+<div id="output"></div>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const user = params.get("user");
+
+  document.getElementById("output").innerHTML = user;
+</script>
+
+</body>
+</html>
